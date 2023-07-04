@@ -1,0 +1,2 @@
+module practise3 {
+}
