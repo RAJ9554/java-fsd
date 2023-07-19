@@ -1,0 +1,28 @@
+<div style="text-align: center;">
+  <a routerLink="home">Home</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a routerLink="about">About Us</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a routerLink="login">Login</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a routerLink="test/101">Test Param</a>
+</div>
+<br />
+<hr />
+<br />
+<div style="text-align: center;">
+  <select  [(ngModel)]="brand">
+    <option></option>
+    <option>Samsung</option>
+    <option>IPhone</option>
+    <option>Google</option>
+  </select>
+  &nbsp;&nbsp;&nbsp;
+  <input type="button"  value="View Products" (click)="getproductinfo()" />
+</div>
+<hr />
+<div>
+  <router-outlet>
+
+  </router-outlet>
+</div>

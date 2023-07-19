@@ -1,0 +1,25 @@
+<div class="div1">
+    <h2>Registration</h2>
+    <span>Person Name : </span>
+    <input type="text"  [(ngModel)]="personname" />
+    <br /><br />
+    <span>Gender : </span>
+    <input type="radio"  [(ngModel)]="gender"  value="Male" />
+    <span>Male</span>
+    &nbsp;&nbsp;&nbsp;
+    <input type="radio"  [(ngModel)]="gender"  value="Female" />
+    <span>Female</span>
+    <br /><br />
+    <span>Do you have Bike? </span>
+    <input type="checkbox"  [(ngModel)]="haveBike" />
+    <br /><br />
+    <select [(ngModel)]="location">
+        <option>Hyderabad</option>
+        <option>Mumbai</option>
+        <option>Bangalore</option>
+    </select>
+    <br /><br />
+    <input type="button"  value="Click Me"  (click)="printValues()" />
+    <br />
+    <h3 [innerHTML]="msg"></h3>
+</div>

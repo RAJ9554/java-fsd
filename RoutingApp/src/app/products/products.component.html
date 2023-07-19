@@ -1,0 +1,16 @@
+
+<h2>{{brand}}</h2>
+<table class="table table-stripped">
+    <tr>
+        <th>Product ID</th>
+        <th>Product name</th>
+        <th>Product Price</th>
+        <th>Product Brand</th>
+    </tr>
+    <tr *ngFor="let p of products">
+        <td>{{p.prdId}}</td>
+        <td>{{p.prdName|uppercase}}</td>
+        <td>{{p.prdPrice|currency:"INR"}}</td>
+        <td>{{p.prdBrand}}</td>
+    </tr>
+</table>

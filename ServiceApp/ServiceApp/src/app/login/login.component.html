@@ -1,0 +1,23 @@
+<div class="logincss">
+    <table width="100%" border="1">
+        <tr>
+            <td>Username</td>
+            <td>
+                <input type="text"  [(ngModel)]="uname" placeholder="Username" />
+            </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password"  [(ngModel)]="pwd" placeholder="Password" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button"   value="Click Me" (click)="LoginCheck()" />
+                    <br /><br />
+                    <div [innerHTML]="msg" style="color: red;"></div>    
+                </td>
+            </tr>
+    </table>
+</div>

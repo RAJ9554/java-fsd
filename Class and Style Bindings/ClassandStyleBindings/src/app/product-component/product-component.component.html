@@ -1,0 +1,15 @@
+<div style="border: 2px solid red">
+
+    <p> MY PRODUCT from the Product Component</p>
+    
+    <h3>Product Details</h3>
+    <img [src]="product.imageUrl" [width]="product.imageWidth" height="100px">
+    <ul>
+        <li>Name : {{product.name}}</li>
+        <li>Price : {{product.price}}</li>
+        <li><div [style.color]="product.isSpecial?'red':'green'"> SPECIAL </div></li>
+        <li><div [class.inStock]="product.inStock"> IN STOCK </div></li>
+    </ul>
+    
+    </div>
+    

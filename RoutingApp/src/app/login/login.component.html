@@ -1,0 +1,26 @@
+<div style="text-align: center;">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <b>Login Page</b>
+                    </div>
+                    <div class="card-body">
+                        <form #loginform="ngForm" (ngSubmit)="LoginCheck()">
+                            <input type="text" [(ngModel)]="username" name="username" class="form-control" placeholder="Username" />
+                            <br />
+                            <input type="password" [(ngModel)]="pswd" name="pswd" class="form-control" placeholder="Password" />
+                            <br />
+                            <input type="submit"  value="Click Me" class="btn btn-success" />
+                            <br />
+                            <div [innerHTML]="msg"></div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
