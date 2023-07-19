@@ -1,0 +1,28 @@
+<div>
+    <h2>Actual Value : {{personname}}</h2>
+    <h2>Upper Case String :  {{personname| uppercase}}</h2>
+    <h2>Lower Case String :  {{personname| lowercase}}</h2>
+    <hr />
+    <h2>Actual Value : {{salary}}</h2>
+    <h2>USA Currency Value : {{salary| currency :"USD"}}</h2>
+    <h2>Indian Currency Value : {{salary | currency:"INR"}}</h2>
+    <h2>European Currency Value : {{salary | currency:"EUR"}}</h2>
+    <hr />
+    <h2>Actual Date : {{dt}}</h2>
+    <h2>Short Date : {{dt | date :"shortDate"}}</h2>
+    <h2>Long Date : {{dt | date :"longDate"}}</h2>
+    <h2>Full Date : {{dt | date :"fullDate"}}</h2>
+    <h2>Medium Date : {{dt | date :"mediumDate"}}</h2>
+    <h2>Date Format(d/M/y) : {{dt | date :"d/MM/y"}}</h2>
+    <h2>Date Format(d-MM-y) : {{dt | date :"d-MM-y"}}</h2>
+    <h2>Time : {{dt | date:"h:m:s"}}</h2>
+    <hr />
+    <h2>Actual Json Data : {{person}}</h2>
+    <h2>Json Data : {{person|json}}</h2>
+    <hr />
+    <h2>Actual Value is : {{fees}}</h2>
+    <h2>Number Format : {{fees|number}}</h2>
+    <hr />
+    <h2>Actual Value is : {{val}}</h2>
+    <h2>Percentage : {{val | percent}}</h2>
+</div>

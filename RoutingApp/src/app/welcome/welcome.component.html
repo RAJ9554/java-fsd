@@ -1,0 +1,40 @@
+<div>
+    <h1>
+        Welcome Page
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a routerLink="/login">Logout</a>
+    </h1>
+    <hr />
+    <h1>Pipes</h1>
+    <hr />
+    <h2>Actual Value : {{personname}}</h2>
+    <h2>Upper Case : {{personname|uppercase}}</h2>
+    <h2>Lower Case : {{personname|lowercase}}</h2>
+    <hr />
+    <h2>Actual Value : {{salary}}</h2>
+    <h2>Salary in Indian : {{salary|currency:"INR"}}</h2>
+    <h2>Salary in Dollor : {{salary|currency:"USD"}}</h2>
+    <h2>Salary in Euorpe : {{salary|currency:"EUR"}}</h2>
+    <h2>Salary in British : {{salary|currency:"GBP"}}</h2>
+    <hr />
+    <h2>Current Date : {{dt}}</h2>
+    <h2>Short Date : {{dt|date:"shortDate"}}</h2>
+    <h2>Medium Date : {{dt|date:"mediumDate"}}</h2>
+    <h2>Long Date : {{dt|date:"longDate"}}</h2>
+    <h2>Full Date : {{dt|date:"fullDate"}}</h2>
+    <h2>Short Time : {{dt|date:"shortTime"}}</h2>
+    <h2>Medium Time : {{dt|date:"mediumTime"}}</h2>
+    <h2>Long Time : {{dt|date:"longTime"}}</h2>
+    <h2>Date : (d/M/y) : {{dt|date:"d/MM/y"}}</h2>
+    <h2>Date : (d-M-y) : {{dt|date:"d-MM-y"}}</h2>
+    <hr />
+    <h2>Person Details : {{person}}</h2>
+    <h2>Person Details in JSON : {{person|json}}</h2>
+    <hr />
+    <h2>Actual Value : {{val}}</h2>
+    <h2>Actual Value in Number Format : {{val|number}}</h2>
+    <h2>Actual Value in Number Format : {{val|number:".2"}}</h2>
+    <hr />
+    <h2>Actual Value : {{per}}</h2>
+    <h2>In Percentage : {{per|percent}}</h2>
+</div>

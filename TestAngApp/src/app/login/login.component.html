@@ -1,0 +1,11 @@
+<div class="div1">
+    <h1>Login Form</h1>
+    <span>Username : </span>
+    <input type="text"  [(ngModel)]="username" />
+    <br /><br />
+    <span>Password : </span>
+    <input type="password"  [(ngModel)]="password" />
+    <br /><br />
+    <input type="button"  value="Click Me" (click)=" LoginCheck()" />
+    <h2>{{msg}}</h2>
+</div>

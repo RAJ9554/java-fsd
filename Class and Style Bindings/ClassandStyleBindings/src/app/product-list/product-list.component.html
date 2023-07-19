@@ -1,0 +1,32 @@
+<div style="border: 2px  solid green">
+
+    <div class="h2">Product list</div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <table border="2">
+        <tr>
+            <th> Image
+            <th> Name
+            <th> Price </th>
+            <th> Special </th>
+            <th> IN Stock </th>
+        </tr>
+
+        <tr *ngFor="let p of products">
+
+           
+                <td><img [src]="p.imageUrl" [width]="p.imageWidth" height="100px">
+                <td> {{p.name}}
+                <td> {{p.price}}
+                
+                    <td><div [style.color]="p.isSpecial?'red':'green'" [style.visibility]="p.isSpecial?'visible':'hidden'"> SPECIAL </div>
+                <td><div [class.inStock]="p.inStock"> IN STOCK </div>
+         </tr>  
+
+       
+
+    </table>
+
+
+</div>
