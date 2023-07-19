@@ -1,0 +1,114 @@
+
+<!-- dashboard.component.html -->
+<nav class="navbar bg-primary">
+    <div class="container-fluid">
+      <h3 class="text-white">Employee Master List</h3>
+      <div class="d-flex">
+        <button class="btn btn-success" (click)="showModel = true">Add Employee</button>
+        <form (click)="logout()" action="signin">
+          <button type="submit" class="mx-3 btn btn-warning">Logout</button>
+        </form>
+        <button class="btn btn-sm btn-outline-dark" (click)="showPassModel = true">Change Password</button>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5">
+    <table class="table text-center table-hover mt-5">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of employeeData">
+          <td>{{ row.id }}</td>
+          <td>{{ row.first_name }}</td>
+          <td>{{ row.last_name }}</td>
+          <td>{{ row.email }}</td>
+          <td>
+            <button type="button" (click)="onEdit(row)" class="btn btn-sm btn-warning">Edit</button>
+            <button type="button" (click)="deleteEmployee(row)" class="mx-2 btn btn-sm btn-outline-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" [ngClass]="{ 'show': showModel }">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Employee view Details</h5>
+          <button id="cancel" (click)="closeModal()">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="form-group">
+              <label for="id">Id</label>
+              <input type="number" formControlName="id" class="form-control" id="id" placeholder="123" required>
+            </div>
+            <div class="form-group">
+              <label for="firstname">Firstname</label>
+              <input type="text" formControlName="firstname" class="form-control" id="firstname" placeholder="yournameenter" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Lastname</label>
+              <input type="text" formControlName="lastname" class="form-control" id="lastname" placeholder="lastname" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" formControlName="email" class="form-control" id="email" placeholder="abc@gmail.com" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal()">Close</button>
+          <button type="button" class="btn btn-primary" (click)="postEmployeeDetails()" *ngIf="!isEditMode()">Add</button>
+          <button type="button" class="btn btn-primary" (click)="updateEmployeeDetails()" *ngIf="isEditMode()">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" [ngClass]="{ 'show': showPassModel }">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="currentPassword" class="col-sm-5 col-form-label">Current Password</label>
+              <div class="col-sm-7">
+                <input type="password" class="form-control" id="currentPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="newPassword" class="col-sm-5 col-form-label">New Password</label>
+              <div class="col-sm-7">
+                <input type="password" class="form-control" id="newPassword" placeholder="lkdes@#%12SD">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal()">Close</button>
+          <button type="button" class="btn btn-primary" (click)="changePass()">Update Password</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
