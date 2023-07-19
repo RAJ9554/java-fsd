@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <b>New Employee Register</b>
+            </div>
+            <div class="card-body">
+                <form #empForm="ngForm" (ngSubmit)="addNewEmployee(empForm)">
+                <label>First Name</label>
+                <input type="text"  [(ngModel)]="emp.firstName" 
+                name="firstName" 
+                class="form-control" #fctrl="ngModel" required="required" />
+                <span class="errorinfo"  *ngIf="fctrl.touched && fctrl.invalid">
+                    <b>First Name is Required</b>
+                </span>
+                <br />
+                <label>Last Name</label>
+                <input type="text"  [(ngModel)]="emp.lastName" 
+                name="lastName" class="form-control"  #lctrl="ngModel" required="required"/>
+                <span class="errorinfo"  *ngIf="lctrl.touched && lctrl.invalid">
+                    <b>Last Name is Required</b>
+                </span>
+        
+                <br />
+                <label>Email</label>
+                <input type="text"  [(ngModel)]="emp.emailId" 
+                name="emailId" class="form-control" #ectrl="ngModel" required="required" />
+                <span class="errorinfo"  *ngIf="ectrl.touched && ectrl.invalid">
+                    <b>Email is Required</b>
+                </span>
+            
+                <br />
+                <input type="submit"  value="Add new Employee" class="btn btn-success" />
+                <br /><br />
+                <div [innerHTML]="msg" class="errorinfo"></div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
