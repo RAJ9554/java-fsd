@@ -1,0 +1,75 @@
+<div id="colorlib-main">
+   <section
+      class="colorlib-about"
+      data-section="about">
+      <div class="colorlib-narrow-content">
+         <div class="row">
+            <div class="col-md-12">
+               <div
+                  class="row row-bottom-padded-sm animate-box"
+                  data-animate-effect="fadeInLeft">
+                  <div class="col-md-12">
+                     <div class="about-desc">
+                        <h2>{{projectData.label}}</h2>
+                        <hr>
+                        <div *ngFor="let itemDescription of projectData.description">
+                           <p>{{itemDescription}}</p>
+                        </div>
+                        <div class="col-md-12">
+                           <article
+                              class="timeline-entry animate-box"
+                              data-animate-effect="fadeInRight"
+                              *ngFor="let item of projectData.data">
+                              <br>
+                              <ul class="fa-ul mb-0">
+                                 <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInRight"> -->
+                                 <li>
+                                    <i class="fa-li fa fa-check"></i>
+                                    <div>
+                                       <a
+                                          href="{{item.demoURL}}"
+                                          style="text-decoration:none;">
+                                          <div>
+                                             <h4 class="mb-3">{{item.project_name}}</h4>
+                                          </div>
+                                          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
+                                             <div id="divMain">
+                                                <div
+                                                   id='left-div'
+                                                   class="resume-content">
+                                                   <img
+                                                      style='float:left; margin:0 20px;'
+                                                      width='300px;'
+                                                      class='img-fluid'
+                                                      src='{{item.image_path}}'>
+                                                </div>
+                                                <div
+                                                   id='right-div'
+                                                   class='resume-content'>
+                                                   <div class="subheading mb-0">
+                                                      <p>{{item.summary}}</p>
+                                                   </div>
+                                                   <div class="mb-0">
+                                                      <span
+                                                         class='badge badge-secondary'
+                                                         *ngFor="let techItem of item.technologies">
+                                                         {{techItem}}
+                                                      </span>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </article>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>

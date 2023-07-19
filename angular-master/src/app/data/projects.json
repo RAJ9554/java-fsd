@@ -1,0 +1,200 @@
+{
+    "projectTitles" :[
+        {
+            "title": "Web-Dev Projects",
+            "code": "webprojects"
+        },
+        {
+            "title": "Software Projects",
+            "code": "softwareprojects"
+        },
+        {
+            "title": "Android Projects",
+            "code": "androidprojects"
+        }
+    ],
+   "androidProject":{
+      "label":"Android Projects",
+      "description" : [],
+      "data":[
+         {
+            "project_name":"NITW-CSE",
+            "image_path":"/assets/image_paths/nitwcse.jpg",
+            "summary":"App contains details of Dept courses, ref. books, research, publication and faculty profile.",
+            "demoURL":"https://github.com/vinaysomawat/NITW-CSE",
+            "technologies":[
+               "Java",
+               "XML",
+               "Android SDK"
+            ]
+         },
+         {
+            "project_name":"CareerHigh-App",
+            "image_path":"/assets/image_paths/carrerhigh.png",
+            "summary":"The app shows the content of website careerhigh.in in android devices.",
+            "demoURL":"https://github.com/vinaysomawat/CareerHigh-Android",
+            "technologies":[
+               "Java",
+               "XML",
+               "Android SDK"
+            ]
+         }
+      ]
+   },
+   "webProject":{
+      "label":"Web Projects",
+      "description" : [
+          "Websites and Web Apps are the first line of communication between enterprices and potential guests or visitors.",
+          "Web development services help your company to increase product knowledge, maintain communication between you and potential clients, sell your products or services, generate leads for the business, and increase the popularity of your company and much more."
+      ],
+      "data":[
+         {
+            "project_name":"Travographer-Portal",
+            "image_path":"/assets/image_paths/tg-portal.png",
+            "summary":"It is an implementation to Setup Amazon S3 in a Django Project, how to use S3 to handle user uploaded files.",
+            "demoURL":"https://github.com/vinaysomawat/Travographer-Portal",
+            "technologies":[
+               "Django",
+               "AWS",
+               "Bootstrap",
+               "JavaScript",
+               "Heroku"
+            ]
+         },
+         {
+            "project_name":"Programming Diaries",
+            "image_path":"/assets/image_paths/programmingdiaries.png",
+            "summary":"Developed an blog application to provide content on Programming, web and android development to all the programmers and budding programmers across the internet.",
+            "demoURL":"https://programmingdiaries.herokuapp.com/",
+            "technologies":[
+               "Django",
+               "SQLite3",
+               "Bootstrap",
+               "HTML5",
+               "CSS3",
+               "JavaScript",
+               "Heroku"
+            ]
+         },
+         {
+            "project_name":"DeveloperAtYourDoor",
+            "image_path":"/assets/image_paths/developeratyourdoor.png",
+            "summary":"Angular and spring based tool which shows a filtered list of developer profiles using back end APIs.",
+            "demoURL":"https://github.com/vinaysomawat/DeveloperAtYourDoor",
+            "technologies":[
+               "Spring",
+               "Angular",
+               "Bootstrap",
+               "MongoDB",
+               "HTML5",
+               "CSS3",
+               "JavaScript",
+               "Heroku"
+            ]
+         },
+         {
+            "project_name":"Web-Porfolio",
+            "image_path":"/assets/image_paths/portfolio.png",
+            "summary":"Web Portfolio to showcase acadmics, skills, projects and contact details in better manner.",
+            "demoURL":"https://vinaysomawat.github.io/",
+            "technologies":[
+               "Bootstrap",
+               "HTML5",
+               "CSS3",
+               "JavaScript",
+               "Jquery"
+            ]
+         },
+         {
+            "project_name":"Resume Builder",
+            "image_path":"/assets/image_paths/resume-builder.png",
+            "summary":"Web based editor to build Resumes in a customizable templates.",
+            "demoURL":"https://vinaysomawat.github.io/Resume-Builder",
+            "technologies":[
+               "Bootstrap",
+               "HTML5",
+               "CSS3",
+               "JavaScript",
+               "Jquery"
+            ]
+         },
+         {
+            "project_name":"Django File Handle",
+            "image_path":"/assets/image_paths/djangofilehandle.png",
+            "summary":"Users can upload any img/pdf file and can view it with its cover picture with delete functionality.",
+            "demoURL":"http://somawatvinay.pythonanywhere.com/",
+            "technologies":[
+               "Django",
+               "Python",
+               "MySQL",
+               "Bootstrap",
+               "HTML5",
+               "CSS3",
+               "JavaScript"
+            ]
+         }
+      ]
+   },
+   "softwareProject":{
+      "label":"Software Projects",
+      "description" : [
+          ""
+      ],
+      "data":[
+         {
+            "project_name":"Pizza Ordering ChatBOT",
+            "image_path":"/assets/image_paths/pizzaorderchatbot.png",
+            "summary":"ChatBot using Dialogflow, Firebase database which stores the chat data in the realtime database.",
+            "demoURL":"https://github.com/vinaysomawat/Pizza-Ordering-ChatBot",
+            "technologies":[
+               "DialogFlow",
+               "Firebase"
+            ]
+         },
+         {
+            "project_name":"WhatsApp-Bot",
+            "image_path":"/assets/image_paths/whatsappbot.jpg",
+            "summary":"Python script which helps to send messages to WhatsApp contacts automatically using selenium and web automation.",
+            "demoURL":"https://github.com/vinaysomawat/WhatsApp-Bot",
+            "technologies":[
+               "Selenium",
+               "Chrome WebDriver",
+               "Python"
+            ]
+         },
+         {
+            "project_name":"Bill Generator",
+            "image_path":"/assets/image_paths/billgenerator.png",
+            "summary":"GUI to transfer data to excel sheets and generate bills on the local shops.",
+            "demoURL":"https://github.com/vinaysomawat/Bill-Generator",
+            "technologies":[
+               "Tkinter",
+               "Openxlpy",
+               "Python"
+            ]
+         },
+         {
+            "project_name":"Nodejs-web-crawling",
+            "image_path":"/assets/image_paths/nodejswebcrawling.png",
+            "summary":"By sending HTTP request to a particular URL and then by extracting HTML of that web page for getting useful information is known as crawling or web scraping.",
+            "demoURL":"https://github.com/vinaysomawat/Nodejs-Web-Crawling",
+            "technologies":[
+               "Nodejs",
+               "HTML5",
+               "CSS3",
+               "JavaScript"
+            ]
+         },
+         {
+            "project_name":"Calculator GUI",
+            "image_path":"/assets/image_paths/calculatorgui.png",
+            "summary":"Calculator GUI for mathematical calculation.",
+            "demoURL":"https://github.com/vinaysomawat/Calculator-using-tkinter",
+            "technologies":[
+               "Tkinter",
+               "Python"
+            ]
+         }
+      ]
+   }
+}
