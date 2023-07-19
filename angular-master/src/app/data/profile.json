@@ -1,0 +1,94 @@
+{
+   "username":"Vinay Somawat",
+   "image_path":"/assets/images/profile.jpg",
+   "intro": [
+       "Hi, Welcome to my portfolio.",
+       "I am a software developer engineer and computer science undergraduate student at National Institute of Technology, Warangal."
+   ],
+   "banner":"You will be happy to know that I have completed over 20+ projects successfully!",
+   "skills":[
+      {
+         "label":"Algorithms/C++(STL)",
+         "value":"50"
+      },
+      {
+         "label":"MongoDB/ExpressJS/NodeJS",
+         "value":"50"
+      },
+      {
+         "label":"Python/Django/MySQL",
+         "value":"50"
+      },
+      {
+         "label":"AWS/GCP",
+         "value":"50"
+      },
+      {
+         "label":"Bootstrap/HTML/JavaScript",
+         "value":"50"
+      },
+      {
+         "label":"Java/Android/Spring-boot",
+         "value":"50"
+      },
+      {
+         "label":"Word/Excel/Photoshop",
+         "value":"50"
+      },
+      {
+         "label":"Git/Trello/Postman/ChromeDevTools",
+         "value":"50"
+      },
+      {
+         "label":"Documentation Writing/Communication",
+         "value":"50"
+      }
+   ],
+   "workExperience":[
+      {
+         "company_name":"ThinkPedia LLP",
+         "designation":"Software Developement Engineering Intern",
+         "time_period":"May 2019 - June 2019",
+         "summary":[
+            "Developed Customer Web Application for social media management from scratch.",
+            "Designed frontend with Angular 7 and backend services with Java framework spring-boot.",
+            "Worked in System Design, System Testing, API Integration and Cloud Services for the deployment and production of the application."
+         ]
+      },
+      {
+         "company_name":"Fossasia Organization",
+         "designation":"Open Source Contributor",
+         "time_period":"December 2018 - April 2019",
+         "summary":[
+            "Contributed in projects Badgeyay, OpenEvent Frontend, account.susi.ai.",
+            "Raised 13 pull requests and 10+ front-end and backend issues. Also reviewed, perfected and pushed the codes of other developers in production."
+         ]
+      }
+   ],
+   "education":[
+      {
+         "degree":"Bachelors in Computer Science and Engineering",
+         "institute":"National Institute of Technology, Warangal",
+         "summary":[
+            "Courses undertaken Data Strucutures and Algorithms, Operating Systems, Database Management Systems, Networks, Distributed Computing, Object Oriented Programming, Computer Architecture."
+         ]
+      },
+      {
+         "degree":"Intermediate",
+         "institute":"Board of Secondary Education, Rajasthan",
+         "summary":[
+            "Courses undertaken Physics, Chemistry and Mathematics."
+         ]
+      }
+   ],
+   "mail":"vinaysomawat40@gmail.com",
+   "github":"https://github.com/vinaysomawat",
+   "githubusername":"vinaysomawat",
+   "buymecoffee":"https://www.buymeacoffee.com/r194dME8y",
+   "quora":"https://quora.com/profile/Vinay-Somawat",
+   "linkdin":"https://www.linkedin.com/in/vinaysomawat/",
+   "codechef":"https://www.codechef.com/users/somawatvinay",
+   "hackerRank":"https://www.hackerrank.com/somawatvinay",
+   "hackerearth":"https://www.hackerrank.com/somawatvinay",
+   "geeksforgeeks":"https://auth.geeksforgeeks.org/user/somawatvinay/profile"
+}
