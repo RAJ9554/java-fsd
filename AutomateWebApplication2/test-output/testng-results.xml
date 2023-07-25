@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-24T19:02:26 IST" name="Suite" finished-at="2023-07-24T19:03:20 IST" duration-ms="54912">
+    <groups>
+    </groups>
+    <test started-at="2023-07-24T19:02:26 IST" name="Test" finished-at="2023-07-24T19:03:20 IST" duration-ms="54912">
+      <class name="com.test.logintest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.test.logintest@235ecd9f]" started-at="2023-07-24T19:02:26 IST" name="beforeMethod" finished-at="2023-07-24T19:02:49 IST" duration-ms="23326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="facebook()[pri:0, instance:com.test.logintest@235ecd9f]" started-at="2023-07-24T19:02:49 IST" name="facebook" finished-at="2023-07-24T19:02:58 IST" duration-ms="9328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.test.logintest@235ecd9f]" started-at="2023-07-24T19:02:58 IST" name="afterMethod" finished-at="2023-07-24T19:02:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test.logintest -->
+      <class name="com.test.registertest">
+        <test-method signature="f()[pri:0, instance:com.test.registertest@4681c175]" started-at="2023-07-24T19:02:58 IST" name="f" finished-at="2023-07-24T19:03:20 IST" duration-ms="22050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.test.registertest@4681c175]" started-at="2023-07-24T19:03:20 IST" name="afterTest" finished-at="2023-07-24T19:03:20 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.test.registertest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
