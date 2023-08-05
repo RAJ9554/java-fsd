@@ -1,0 +1,24 @@
+<div>
+    <h2>All Issued Aadhar Card</h2>
+    <table border="1" class="table table-bordered border-primary">
+        <tr>
+            <th>Aadhar Number</th>
+            <th>Full Name</th>
+            <th>Date of Birth</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Email Id</th>
+            <th>Mobile Number</th>
+        </tr>
+        <tr *ngFor="let a of aadhars">
+            <td>{{a.cid}}</td>
+            <td>{{a.cname}}</td>
+            <td>{{a.dob}}</td>
+            <td>{{a.address}}</td>
+            <td>{{a.gender}}</td>
+            <td>{{a.emailid}}</td>
+            <td>{{a.number}}</td>
+        </tr>
+        
+    </table>
+</div>
