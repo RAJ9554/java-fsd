@@ -1,0 +1,15 @@
+#logo{
+    height: 110px;
+    width: 230px;
+}
+#container{
+    display: flex;
+}
+h2{
+    margin-left: 7%;
+    font-family: serif;
+    color: red;
+    font-size: -webkit-xxx-large;
+    color: chocolate;
+    font-family: inherit;
+}

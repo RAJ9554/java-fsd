@@ -1,0 +1,56 @@
+<div style="display: flex; flex-direction: row">
+    <div id="listofservice" style="margin-top: 20px">
+      <br />
+  
+      <h4>Available Service</h4>
+      <ul class="list-group">
+        <li class="list-group-item">Aadhar Apply</li>
+        <br />
+        <li class="list-group-item">Update Aadhar</li>
+        <br />
+        <li class="list-group-item">Aadhar Status</li>
+        <br />
+        <li class="list-group-item">Deletion of Aadhar</li>
+        <br />
+      </ul>
+    </div>
+    <div id="container" style="margin-top: 20px">
+      <h2>Login Here</h2>
+      <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+        <label class="form-label">EmailId</label>
+        <input
+          type="email"
+          formControlName="emailid"
+          class="form-control"
+        /><br />
+        <label class="form-label">Password</label>
+        <input
+          type="password"
+          formControlName="password"
+          class="form-control"
+        /><br />
+        <label>Type Of User</label>
+        <input
+          type="radio"
+          name="typeOfUser"
+          value="admin"
+          formControlName="typeOfUser"
+          class="form-check-input"
+        />Admin
+        <input
+          type="radio"
+          name="typeOfUser"
+          value="user"
+          formControlName="typeOfUser"
+          class="form-check-input"
+        />User<br />
+        <input type="submit" value="signIn" class="btn btn-primary" />
+        <input type="reset" value="reset" class="btn btn-secondary" />
+        <a routerLink="/signUp" class="btn btn-success">New User</a>
+        <a routerLink="/signUp" class="btn btn-info">New Admin</a>
+      </form>
+      <br />
+      <span style="color: rgb(255, 0, 0)">{{ msg }}</span>
+    </div>
+  </div>
+  

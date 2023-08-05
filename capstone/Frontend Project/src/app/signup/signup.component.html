@@ -1,0 +1,36 @@
+<div
+  style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  "
+>
+  <h3>Create Account</h3>
+  <form [formGroup]="loginRef" (ngSubmit)="signUp()" style="width: 300px">
+    <label>EmailId</label><br />
+    <input type="email" formControlName="emailid" /><br />
+    <label>Password</label><br />
+    <input type="password" formControlName="password" /><br />
+    <label>TypeOfUser</label><br />
+    <input
+      type="radio"
+      name="typeOfUser"
+      value="admin"
+      formControlName="typeOfUser"
+    />admin
+    <input
+      type="radio"
+      name="typeOfUser"
+      value="user"
+      formControlName="typeOfUser"
+    />user<br />
+    <input type="submit" value="signUp" />
+    <input type="reset" value="reset" />
+  </form>
+  <br />
+  <span style="color: red">{{ msg }}</span
+  ><br />
+  <a routerLink="/login">login</a>
+</div>

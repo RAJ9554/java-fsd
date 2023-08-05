@@ -1,0 +1,16 @@
+#container{
+    width: 40%;
+    margin-left: 25%;
+}
+#listofservice{
+    display: table-cell;
+    margin-top: 21px;
+    padding-top: 23px;
+    padding-left: 20px
+}
+.btn-success{
+    float: right;
+}
+.btn-secondary{
+    margin-left: 10%;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Enter Your details for Aadhar card</h2>
+    <form [formGroup]="aadharRef" (ngSubmit)="storeAadhar()">
+        <label>Full Name</label><br/>
+        <input type="text" formControlName="cname" class="form-control"><br/>
+        <label>Date of Birth</label><br/>
+        <input type="text" formControlName="dob" class="form-control"><br/>
+        <label>Address</label><br/>
+        <input type="text" formControlName="address" class="form-control"><br/>
+        <label>Gender</label><br/>
+        <input type="text" formControlName="gender" class="form-control"><br/>
+        <label>Mobile number</label><br/>
+        <input type="text" formControlName="number" class="form-control"><br/>
+        <label>Email Id</label><br/>
+        <input type="text" formControlName="emailid" class="form-control"><br/>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+        <input type="reset" value="reset" class="btn btn-secondary"/><br/>
+    </form><br/>
+    <span style="color: red">{{storeMsg}}</span>
+</div>
